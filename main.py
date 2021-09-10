@@ -13,4 +13,5 @@ from player import Player
 #        self.gesture_choice = input("Enter your gesture:")   
 
 player_one = Player()
-
+player_one.set_name()
+player_one.gesture_choice()
