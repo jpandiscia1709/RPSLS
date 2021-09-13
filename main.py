@@ -1,6 +1,8 @@
 # project start
 from player import Player
-
+from human import Human
+from computer import Computer
+from game import Game
    
 # def __init__(self):
 #        self.name = ''
@@ -12,6 +14,7 @@ from player import Player
 #        self.choice = print(self.gesture)
 #        self.gesture_choice = input("Enter your gesture:")   
 
-player_one = Player()
-player_one.set_name()
-player_one.gesture_choice()
+# player_one =  Game()
+# player_one.set_name()
+# player_one.gesture_choice()
+print(game.welcome)

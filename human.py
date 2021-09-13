@@ -3,9 +3,6 @@
 from player import Player
 
 class Human(Player):
-
-
-    class Human:
-      def __init__(self, name):
-        self.name = name
-        super().__init__
+  def __init__(self):
+      self.name = ''
+      super().__init__()

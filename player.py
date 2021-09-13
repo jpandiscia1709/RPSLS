@@ -5,6 +5,7 @@ class Player:
        self.name = ''
        self.gesture = ["rock", "paper", "scissors", "lizard", "spock" ]
        self.chosen_gesture = ''
+       self.score = ''
 
    def set_name(self):
        self.name = input("Enter player name:")
