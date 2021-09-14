@@ -13,6 +13,7 @@ class Game:
 # 10.	Track score (round wins) and check to see if someone has won the whole game (best of 3 minimum) (check every round)
 # 11.	Display the winner
 # 12.	 Do you want to play the entire game again?
+
     def __init__(self):
         player_one = ''
         player_two = '' 
@@ -23,7 +24,12 @@ class Game:
         self.name = input("Enter player name:")
         print("player name: ", self.name)
 
-
+    def run_game(self):
+        # self.new_game = Game()
+        self.new_game.game_type()
+        self.new_game.player_one.set_name()
+        self.new_game.player_one.gesture_choice()
+        self.new_game.player_two.gesture_choice()
 # player_one = ''
 # player_two = ''
 
@@ -41,7 +47,6 @@ class Game:
 #    def gesture_choice(self):
 #        print("Please enter one of the following gestures: rock, paper, scissors, lizard, or spock")
 #        self.player_one.chosen_gesture = input("Enter your gesture:")  
-
 
 # while True: 
 #     game_type = input("Please choose '1' for Single Player (Player vs. Computer) or '2' Multiplayer (Player 1 vs. Player 2)")
@@ -73,27 +78,29 @@ class Game:
         
     # def choose_players(self):
     #     input("Please choose Single Player (Player vs. Computer) or Multiplayer (Player 1 vs. Player 2)")
-
-def player_gesture(self):
-        if self.player_one.gesture == self.player_two.gesture:
-            print("Try Again")
-            # run 'select a gesture'
-        elif self.player_one.gesture == "rock" and self.player_two.gesture == "lizard" or "scissors":
-            print("Player One Wins!")
-            # add 1 to player one counter
-        elif self.player_one.gesture == "paper" and self.player_two.gesture == "rock" or "spock":
-            print("Player One Wins!")
-        # add 1 to player one counter
-        elif self.player_one == "scissors" and self.player_two == "lizard" or "paper":
-            print("Player One Wins!")
-        # add 1 to player one counter
-        elif self.player_one.gesture == "lizard" and self.player_two.gesture == "paper" or "spock":
-            print("Player One Wins!")
-        # add 1 to player one counter
-        elif self.player_one.gesture == "spock" and self.player_two.gesture == "rock" or "scissors":
-            print("Player One Wins!")
-        # add 1 to player one counter
-        else:
-            print("Player Two Wins!")
-            # add 1 to player two counter
+     
+    # def player_gesture(self):
+    # Need to pull variable from self.chose_gesture
+    #     player_gesture = 
+    #     if player_gesture == gesture_choice
+    #         print("Try Again")
+    #         # run 'select a gesture'
+    #     elif self.player_one.gesture == "rock" and self.player_two.gesture == "lizard" or "scissors":
+    #         print("Player One Wins!")
+    #         # add 1 to player one counter
+    #     elif self.player_one.gesture == "paper" and self.player_two.gesture == "rock" or "spock":
+    #         print("Player One Wins!")
+    #     # add 1 to player one counter
+    #     elif self.player_one == "scissors" and self.player_two == "lizard" or "paper":
+    #         print("Player One Wins!")
+    #     # add 1 to player one counter
+    #     elif self.player_one.gesture == "lizard" and self.player_two.gesture == "paper" or "spock":
+    #         print("Player One Wins!")
+    #     # add 1 to player one counter
+    #     elif self.player_one.gesture == "spock" and self.player_two.gesture == "rock" or "scissors":
+    #         print("Player One Wins!")
+    #     # add 1 to player one counter
+    #     else:
+    #         print("Player Two Wins!")
+    #         # add 1 to player two counter
 
