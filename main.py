@@ -14,7 +14,12 @@ from game import Game
 #        self.choice = print(self.gesture)
 #        self.gesture_choice = input("Enter your gesture:")   
 
-# player_one =  Game()
-# player_one.set_name()
-# player_one.gesture_choice()
-print(game.welcome)
+new_game = Game()
+new_game.set_name()
+new_game.game_type()
+new_game.player_two.gesture_choice()
+
+# def get_player_gestures(self):
+#     self.player_one.gesture_choice()
+#     self.player_two.gesture_choice()
+#     compare_gestures()
